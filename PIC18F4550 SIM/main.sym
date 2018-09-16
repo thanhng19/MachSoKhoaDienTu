@@ -1,0 +1,243 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-017 strtok.save
+018-027 Banphim
+028.0   kt
+029     key
+02A     mksai
+02B     NewSms
+02C     NewCall
+02D-031 Inpass
+032-036 Newpass
+037-03B Password
+03C     rcv
+03D     b1
+03E     b2
+03F     b3
+040     b4
+041     b5
+042-0D7 Buffer
+0D8     o
+0D9-0E4 SDT0
+0E5-0F1 SDT84
+0F2-0F6 PassUnlock
+0F7-0FB PassWarning
+0FC     counter
+0FD     Servo
+0FE     MAIN.i
+0FF     MAIN.khoa
+100     MAIN.i
+101     MAIN.index
+102     MAIN.i
+103     MAIN.ChinhChu
+104     MAIN.index
+105     MAIN.i
+106     MAIN.index
+107     MAIN.i
+108     MAIN.i
+109     MAIN.@SCRATCH1
+10A     MAIN.@SCRATCH2
+10B     @PSTRINGCN_9600_31766_31767.P1
+10B     Ktmk.b
+10B     reset.i
+10B     lcd_init.i
+10B-10C strstr.s1
+10B     QT.key
+10B     Khoitaophim.i
+10B     MAIN.@SCRATCH3
+10B     @PSTRINGC_674.@SCRATCH1
+10B     @PSTRINGR_9600_31766_31767.@SCRATCH1
+10C     Ktmk.a
+10C     Dieukhiencot.cot
+10C-10F lcd_init.LCD_INIT_STRING
+10C     reset.@SCRATCH1
+10C     @PSTRINGC_9600_31766_31767.@SCRATCH1
+10C     @PSTRINGC_674.@SCRATCH2
+10C     @PSTRINGCN_9600_31766_31767.@SCRATCH1
+10C     @PSTRINGR_9600_31766_31767.@SCRATCH2
+10D     Dieukhiencot.trangthai
+10D     lcd_putc.c
+10D     Ktmk.i
+10D-10E strstr.s2
+10D     reset.@SCRATCH2
+10D     @PSTRINGC_9600_31766_31767.@SCRATCH2
+10D     @PSTRINGCN_9600_31766_31767.@SCRATCH2
+10E     lcd_gotoxy.x
+10E     Ktmk.a
+10F     Ktmk.i
+10F     lcd_gotoxy.y
+10F-110 strstr.s
+110     @delay_ms1.P1
+110     lcd_gotoxy.address
+110     lcd_init.@SCRATCH1
+110     Ktmk.@SCRATCH1
+111-112 strstr.t
+111     lcd_gotoxy.@SCRATCH1
+112     lcd_send_byte.address
+113     lcd_send_byte.n
+113     strstr.@SCRATCH1
+114     lcd_read_byte.low
+114     lcd_send_byte.@SCRATCH1
+115     lcd_read_byte.high
+115     lcd_send_nibble.n
+116     lcd_read_nibble.n
+116     lcd_read_byte.@SCRATCH1
+117     lcd_read_nibble.@SCRATCH1
+118     RDA_isr.@SCRATCH1
+119     RDA_isr.@SCRATCH2
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000A2  RDA_isr
+000182  TIMER2_isr
+0001B6  @const822.call
+0001CC  @const828.call
+0001DA  @const830.call
+0001E8  @const831.call
+0001F2  @const832.call
+00020A  @const833.call
+000218  @const834.call
+00021A  @const835.call
+000226  @const838.call
+000228  @const839.call
+000230  @const840.call
+000236  @const841.call
+000246  @const845.call
+000252  @const848.call
+00025E  @const853.call
+000260  @const854.call
+000270  @const855.call
+000276  @const857.call
+000278  @const858.call
+000288  @const859.call
+00028A  @const860.call
+000294  @const861.call
+000296  @const862.call
+0002A4  @const864.call
+0002B4  @const865.call
+0002DA  @const867.call
+0002E6  @const868.call
+0002EC  @const869.call
+0002F8  @const870.call
+0002FA  @const871.call
+000308  @const872.call
+00030A  @const873.call
+000312  @const877.call
+000314  @const878.call
+000320  @const879.call
+000326  @const882.call
+000328  @const883.call
+000336  @const884.call
+00033C  @const888.call
+00033E  @const889.call
+000350  @const890.call
+000356  @const892.call
+000358  @const893.call
+00036A  @const895.call
+00036C  @const896.call
+00037C  @const897.call
+00037E  @const898.call
+00038C  @delay_ms1
+0003B4  lcd_send_nibble
+000400  lcd_read_nibble
+000456  lcd_read_byte
+0004A8  lcd_send_byte
+0004FA  lcd_init
+000596  Dieukhiencot
+0005F6  @goto10739
+000622  Khoitaophim
+000646  lcd_gotoxy
+00066C  lcd_putc
+0006D8  @PSTRINGC_674
+0006F8  @PSTRINGC_9600_31766_31767
+00071A  @PUTCHARI_BIU_1
+000722  strstr
+0007B0  @PSTRINGCN_9600_31766_31767
+0007DA  @PSTRINGR_9600_31766_31767
+000800  reset
+00085C  QT
+000A0E  Ktmk
+000AC2  @cinit1
+000AC2  MAIN
+000B00  @cinit2
+066D  GOTO4
+0824  GOTO3
+0777  GOTO5
+097B  GOTO1
+0A10  GOTO2
+
+Project Directory:
+    D:\Program Files (x86)\NCKH\PIC18F4550 SIM\
+
+Project Files:
+    main.c                                                  [08-Mar-18 21:26  CRC=AF75C2B7]
+    main.h                                                  [08-Feb-18 15:54  CRC=6FD77C0A]
+    ..\..\..\PIC C\Devices\18F4550.h                        [12-Nov-13 14:35  CRC=5337E248]
+    ..\..\..\PIC C\Drivers\lcd.c                            [19-Sep-13 15:38  CRC=D1A6378A]
+    keypad.h                                                [26-Feb-18 00:16  CRC=000097DF]
+    ..\..\..\PIC C\Drivers\string.h                         [14-Jul-11 10:13  CRC=23EDEC8F]
+    ..\..\..\PIC C\Drivers\stddef.h                         [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\PIC C\Drivers\ctype.h                          [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\PIC C\Drivers\stdio.h                          [31-Jul-07 13:24  CRC=4E4534F4]
+
+Source signature=BB4034F4
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
